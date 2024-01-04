@@ -26,4 +26,10 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EasyPay.Business\EasyPay.Business.csproj" />
+    <ProjectReference Include="..\EasyPay.DataAccess\EasyPay.DataAccess.csproj" />
+    <ProjectReference Include="..\EasyPay.EntityLayer\EasyPay.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

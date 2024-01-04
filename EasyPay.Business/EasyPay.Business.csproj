@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EasyPay.DataAccess\EasyPay.DataAccess.csproj" />
+    <ProjectReference Include="..\EasyPay.EntityLayer\EasyPay.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

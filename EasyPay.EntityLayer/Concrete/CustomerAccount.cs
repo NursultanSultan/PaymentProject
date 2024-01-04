@@ -8,7 +8,7 @@ namespace EasyPay.Entity.Concrete
 {
     public class CustomerAccount
     {
-        public int AccountID { get; set; }
+        public int ID { get; set; }
         public string AccountNumber { get; set; }
         public string Currency { get; set; }
         public decimal Balance { get; set; }

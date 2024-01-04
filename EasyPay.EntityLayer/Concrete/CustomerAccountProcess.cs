@@ -8,7 +8,7 @@ namespace EasyPay.Entity.Concrete
 {
     public class CustomerAccountProcess
     {
-        public int ProcessID { get; set; }
+        public int ID { get; set; }
         public string ProcessType { get; set; }
         public decimal Amount { get; set; }
         public DateTime ProcessDate { get; set; }
