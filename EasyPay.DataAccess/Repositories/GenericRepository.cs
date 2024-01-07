@@ -10,7 +10,7 @@ namespace EasyPay.DataAccess.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        public AppDbContext _context;
+        private readonly AppDbContext _context;
         public GenericRepository(AppDbContext context)
         {
             _context = context;
