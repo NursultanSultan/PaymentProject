@@ -29,7 +29,10 @@ namespace EasyPay.Presentation.Controllers
                 Name = registerDto.Name,
                 Surname = registerDto.Surname,
                 UserName = registerDto.Username,
-                Email = registerDto.Email
+                Email = registerDto.Email,
+                City = "Warsaw",
+                District="Nowoursynowska",
+                ImageUrl="dkjsdc"
             };
 
             IdentityResult identityResult = await _userManager.CreateAsync(newUser, registerDto.Password);
@@ -43,7 +46,8 @@ namespace EasyPay.Presentation.Controllers
                 return View();
             }
 
-            return RedirectToAction("Index","ConfirmMail");
+            //return RedirectToAction("Index","ConfirmMail");
+            return View();
 
             
 
