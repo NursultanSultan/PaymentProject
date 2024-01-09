@@ -1,10 +1,12 @@
+using EasyPay.Business.ValidationRules.AppUserVaildationRules;
 using EasyPay.DataAccess.Concrete;
 using EasyPay.Entity.Concrete;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<RegisterValidator>());
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbContext>();
 

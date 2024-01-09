@@ -45,6 +45,7 @@
 			<input type="email" asp-for="Email" placeholder="Email" required="">
 			<input type="password" asp-for="Password" placeholder="Password" required="">
 			<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" required="">
+			<span asp-validation-for="ConfirmPassword"></span> <br />
 
 			<div asp-validation-summary="ModelOnly"></div>
 
@@ -58,7 +59,7 @@
 				</li>
 			</ul>
 			<div class="aitssendbuttonw3ls">
-				<input type="submit" value="LOGIN">
+				<input type="submit" value="Register">
 				<p> Do you have already an account <span>→</span> <a class="w3_play_icon1" href="/Login/Index"> Login </a></p>
 				<div class="clear"></div>
 			</div>
